@@ -3,7 +3,47 @@
     --bg-secondary: #528258;
     --bg-tertiary: #EB5F80;
     --bg-neutral: #727970;
+    --bg-surface: #E9F0E4;
     --text-header: #161D16;
     --text-body: #3E493D;
     --text-label: #495447;
+}
+
+body {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--text-body);
+    background-color: var(--bg-surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header  {
+    display: flex;
+    justify-content: end;
+    max-width: 1140px;
+    width: 100vw;
+}
+
+nav {
+
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+main {
+    max-width: 1140px;
+    width: 100vw;
+}
+
+footer {
+    max-width: 1140px;
+    width: 100vw;
 }
