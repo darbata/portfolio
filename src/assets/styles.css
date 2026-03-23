@@ -4,9 +4,17 @@
     --bg-tertiary: #EB5F80;
     --bg-neutral: #727970;
     --bg-surface: #E9F0E4;
+    --bg-muted: #D1D9CF;
     --text-header: #161D16;
     --text-body: #3E493D;
     --text-label: #495447;
+}
+
+.content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
 }
 
 body {
@@ -22,12 +30,15 @@ body {
 }
 
 header  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1140px;
     width: 100vw;
+    border-bottom: 1px solid var(--bg-muted);
+}
+
+.header__content {
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__title {
@@ -66,7 +77,5 @@ nav > ul {
 }
 
 main {
-    max-width: 1140px;
     width: 100vw;
-    margin: auto;
 }
