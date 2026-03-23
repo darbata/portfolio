@@ -23,13 +23,40 @@ body {
 
 header  {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1140px;
     width: 100vw;
+    height: 80px;
 }
 
-nav {
+.header__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.header__square {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--bg-primary);
+    border-radius: 25%;
+}
+
+.header__name {
+    color: var(--text-header);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.header__link {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.header__link-active {
+    color: var(--bg-primary);
+    border-bottom: 2px solid var(--bg-primary);
 }
 
 nav > ul {
@@ -41,9 +68,5 @@ nav > ul {
 main {
     max-width: 1140px;
     width: 100vw;
-}
-
-footer {
-    max-width: 1140px;
-    width: 100vw;
+    margin: auto;
 }
