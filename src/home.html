@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/globals.css">
 </head>
 <body>
 
     <header>
-        <div class="content">
+        <div class="container">
             <div class="header__content">
                 <div class="header__title">
                     <div class="header__square">
@@ -24,10 +24,10 @@
                 </div>
                 <nav class="header__navbar">
                     <ul class="header__link-list">
-                        <li class="header__link">Home</li>
-                        <li class="header__link header__link-active">Projects</li>
-                        <li class="header__link">About</li>
-                        <li class="header__link">Contact</li>
+                        <li class="header__link header__link-active"><a href="./home.html">Home</a></li>
+                        <li class="header__link"><a href="./projects.html">Projects</a></li>
+                        <li class="header__link"><a href="./about.html">About</a></li>
+                        <li class="header__link"><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,9 +35,14 @@
     </header>
 
     <main>
-        <article>
-            <h1>HEADER</h1>
-        </article>
+        <div class="container">
+            <div id="main__sidebar">
+
+            </div>
+            <div class="main__content">
+
+            </div>
+        </div>
     </main>
 
     <footer></footer>
