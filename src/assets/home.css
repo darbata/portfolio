@@ -1,0 +1,116 @@
+#main__sidebar {
+    height: fit-content;
+    order: 1;
+}
+
+#main__content {
+    order: 0;
+}
+
+@media (min-width: 768px) {
+    #main__sidebar {
+        height: fit-content;
+        order: 0;
+    }
+
+    #main__content {
+        order: 1;
+    }
+
+}
+
+#main__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#status__label {
+    font-family: "JetBrains Mono", monospace;
+    color: var(--bg-secondary);
+    font-size: small;
+    font-weight: bolder;
+}
+#status__project-description {
+    /*font-size: small;*/
+}
+
+#main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+}
+
+#main__location {
+    font-family: "JetBrains Mono", monospace;
+    font-size: small;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 16px;
+    color: var(--text-header);
+}
+
+#main__introduction {
+    font-size: xx-large;
+    color: var(--text-header);
+}
+
+#main__role {
+    color: var(--text-label);
+    font-size: small;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bolder;
+}
+
+#main__technologies, #main__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.8rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: small;
+    color: var(--text-label);
+    font-weight: bold;
+}
+
+#main__technologies > li {
+    margin: 0;
+}
+
+#main__links > li {
+    margin: 0;
+}
+
+#main__cta {
+    border-left: solid 2px var(--bg-tertiary);
+    background-color: color-mix(in srgb, var(--bg-tertiary), transparent 80%);
+    padding: 1.2rem;
+}
+
+.status {
+    border-left: 2px solid var(--bg-primary);
+    background-color: color-mix(in srgb, var(--bg-primary), transparent 90%);
+    padding: 0.4rem 1.2rem;
+}
+
+.main__technology, .main__link, #main__role {
+    line-clamp: 1;
+}
+
+#main__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    list-style: none;
+    padding: 0;
+}
+
+.main__technology + .main__technology::before {
+    content: "• ";
+}
+
+#profile__image {
+    border-radius: 16px;
+    border-bottom-left-radius: 0;
+}

@@ -101,38 +101,22 @@ main .container {
     gap: 1rem;
 }
 
-#main__content {
-    background-color: var(--bg-muted);
-    width: 100%;
-}
-
-#main__sidebar {
-    background-color: var(--bg-secondary);
-    width: 100%;
-}
-
 main .container > * {
+    margin-top: 1rem;
     grid-column: 1 / span 12;
-}
-
-/* tablet */
-@media (min-width: 576px) {
-    #main__sidebar {
-        grid-column: 1 / span 3;
-    }
-
-    #main__content {
-        grid-column: 4 / span 9;
-    }
 }
 
 /* desktop */
 @media (min-width: 768px) {
     #main__sidebar {
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 4;
     }
 
     #main__content {
-        grid-column: 3 / span 10;
+        grid-column: 5 / span 8;
     }
+}
+
+#main__sidebar {
+    height: fit-content;
 }
