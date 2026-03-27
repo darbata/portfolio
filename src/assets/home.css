@@ -16,7 +16,6 @@
     #main__content {
         order: 1;
     }
-
 }
 
 #main__sidebar {
@@ -91,7 +90,7 @@
 .status {
     border-left: 2px solid var(--bg-primary);
     background-color: color-mix(in srgb, var(--bg-primary), transparent 90%);
-    padding: 0.4rem 1.2rem;
+    padding: 1.2rem;
 }
 
 .main__technology, .main__link, #main__role {
